@@ -326,7 +326,7 @@ SELECT
 dbt run --select udf.function.lazy_parse_datetime --vars '{env: staging}'
 ```
 
-![截圖 2024-03-25 下午6.01.27.png](DBT%20UDF%20%E7%94%A8%E6%B3%95%20764ad64940e84639900ed65ba2a6f428/%25E6%2588%25AA%25E5%259C%2596_2024-03-25_%25E4%25B8%258B%25E5%258D%25886.01.27.png)
+![DBT run result](https://github.com/joshua881117/dbt-bigquery-udf/blob/master/dbt_run_result.png)
 
 來檢查最終版本解決了哪些官方推薦做法的缺點      
 
@@ -345,7 +345,7 @@ UDF materialize 後就能使用 model 的特性，且在開發上直觀方便，
 
 在 UDF `materialization` 中有一段是處理 model description，這段是將我們寫在 `schema.yml` 上的 description 寫到 BQ  udf 說明  
 
-![截圖 2024-04-10 下午5.29.36.png](DBT%20UDF%20%E7%94%A8%E6%B3%95%20764ad64940e84639900ed65ba2a6f428/%25E6%2588%25AA%25E5%259C%2596_2024-04-10_%25E4%25B8%258B%25E5%258D%25885.29.36.png)
+![BQ description](https://github.com/joshua881117/dbt-bigquery-udf/blob/master/bigquery_description.png)
 
 ### DBT 內建做法
 
