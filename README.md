@@ -12,7 +12,7 @@
 Bigquery 的 UDF 可以透過以下語法在 BQ 中創建
 
 ```sql
-CREATE OR REPLACE FUNCTION `Joshua.test_udf`(timestamp_str STRING) RETURNS DATETIME AS(
+CREATE OR REPLACE FUNCTION `joshua-1000.udf.parse_datetime`(timestamp_str STRING) RETURNS DATETIME AS(
   PARSE_DATETIME('%Y-%m-%d', timestamp_str)
 )
 ```
