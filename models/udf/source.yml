@@ -1,0 +1,9 @@
+
+version: 2
+
+sources:
+  - name: joshua_dataset
+    schema: joshua_dataset
+    database: joshua-1000
+    tables:
+      - name: test_table

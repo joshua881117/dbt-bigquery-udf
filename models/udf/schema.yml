@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: parse_datetime
+    description: |
+      * 用途: 將字串轉換成時間格式
+      * 參數:
+        * timestamp_expression(STRING): 時間字串
+      * 回傳: 時間(DATETIME)
+      * 範例:
+        * 輸入: parse_datetime('2023/01/01 12:00:00')
+        * 輸出: 2023-01-01 T12:00:00
+  
+  - name: test_table_function
+    description: |
+      * 用途: 測試表格函數
+      * 參數:
+        * id(STRING): ID

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: test_datamart
+    description: 測試用的 datamart 表
+    columns:
+      - name: column1
+        type: INT64
+      - name: datetime
+        type: DATETIME
